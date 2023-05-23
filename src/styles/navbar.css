@@ -1,0 +1,53 @@
+.menu {
+  background: #111111;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  translate: calc(-100vw + var(--navbar-width));
+}
+.menu #navbar {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  padding: 16px;
+  border-right: 1px solid rgba(182, 182, 182, 0.5647058824);
+}
+.menu #navbar .burger {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+}
+.menu #navbar .burger span {
+  height: 32px;
+  width: 1px;
+  background: white;
+}
+.menu .menu-board {
+  flex-grow: 1;
+  background: #111111;
+  height: 100vh;
+  padding: 48px;
+  border-right: 1px solid rgba(182, 182, 182, 0.5647058824);
+}
+.menu .menu-board ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.menu .menu-board ul a {
+  color: white;
+  font-family: "Ogg", serif;
+  text-decoration: none;
+  font-size: 108px;
+}
+.menu .menu-board ul a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=navbar.css.map */
