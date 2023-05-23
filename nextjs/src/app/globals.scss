@@ -1,0 +1,47 @@
+@import "homepage.scss", "projects/projects.scss", "../components/navbar/navbar.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, transparent, rgb(255, 255, 255), rgb(214, 219, 220));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-image: url(../media/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+        opacity: 30%;
+    }
+
+    &:after {
+        content: "";
+        left: calc(50%);
+        top: 50%;
+        position: absolute;
+        filter: blur(55px);
+        transform: translateZ(0) translate(-0%, -50%);
+        background: conic-gradient(from 180deg at 50% 50%, #16abff33 0deg, #0885ff33 55deg, #54d6ff33 120deg, #0071ff33 160deg, transparent 360deg);
+        width: 240px;
+        height: 180px;
+        z-index: -1;
+    }
+}
+
+main {
+    padding: 32px 32px 32px  calc(var(--navbar-width) + 32px); 
+    position: relative;
+    z-index: 2;
+}

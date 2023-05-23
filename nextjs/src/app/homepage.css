@@ -1,0 +1,19 @@
+div.site-title {
+  max-width: 100%;
+}
+div.site-title h1 {
+  font-family: "Ogg";
+  font-size: 140px;
+  line-height: 1em;
+}
+div.site-title p {
+  font-size: 24px;
+}
+div.site-title .banner {
+  width: 80%;
+  margin: 32px 0;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}/*# sourceMappingURL=homepage.css.map */

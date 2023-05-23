@@ -1,0 +1,84 @@
+.menu {
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    translate: calc(-100vw + var(--navbar-width));
+
+    #navbar {
+        width: fit-content;
+        height: 100%;
+        padding: 16px 8px;
+        border-right: 1px solid #B6B6B690;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(20px);
+    
+        .burger {
+            background: none;
+            border: none;
+            outline: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 12px;
+    
+            span {
+                height: 32px;
+                width: 2px;
+                background: #333333;
+            }
+        }
+
+        img {
+            writing-mode: vertical-lr;
+        }
+    }
+    
+    .menu-board {
+        flex-grow: 1;
+        background: #f9f9f9;
+        height: 100vh;
+        padding: 48px;
+        border-right: 1px solid #B6B6B690;
+        overflow: hidden;
+        position: relative;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+            z-index: 2;
+
+            a {
+                color: black;
+                font-family: "Ogg", serif;
+                text-decoration: none;
+                font-size: 108px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &:before {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: conic-gradient(from 180deg at 50% 50%, #16abff33 0deg, #0885ff33 55deg, #54d6ff33 120deg, #0071ff33 160deg, transparent 360deg);
+            filter: blur(45px);
+            transform: scale(1.1);
+        }
+    }
+}
+
