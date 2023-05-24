@@ -48,6 +48,21 @@ div.site-title .buttons a:nth-child(2) {
   border-radius: 16px;
 }
 
+.add {
+  font-size: 24px;
+  border: 1px solid #333333;
+  outline: none;
+  background: none;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 16px;
+  left: calc(var(--navbar-width) + 16px);
+}
+
 .menu {
   height: 100vh;
   position: fixed;
@@ -61,7 +76,7 @@ div.site-title .buttons a:nth-child(2) {
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
-  padding: 16px 8px;
+  padding: 16px;
   border-right: 1px solid rgba(182, 182, 182, 0.5647058824);
   display: flex;
   flex-direction: column;
@@ -85,7 +100,11 @@ div.site-title .buttons a:nth-child(2) {
   background: #333333;
 }
 .menu #navbar img {
-  writing-mode: vertical-lr;
+  position: absolute;
+  top: 16px;
+  left: calc(100% + 16px);
+  width: 150px;
+  height: auto;
 }
 .menu .menu-board {
   flex-grow: 1;

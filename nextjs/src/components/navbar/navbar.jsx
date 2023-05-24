@@ -4,7 +4,7 @@ import {React, useRef, useState, useEffect, useLayoutEffect} from 'react'
 import { gsap } from "gsap";
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from "../../media/logo2.png";
+import logo from "../../media/fostira.svg";
 
 export default function Navbar() {
 
@@ -20,7 +20,6 @@ export default function Navbar() {
         initial: false,
         clicked: null
     });        
-    
 
     useLayoutEffect(() => {
         navbarWidth = navbar.offsetWidth;

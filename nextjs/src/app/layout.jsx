@@ -2,6 +2,7 @@
 
 import "../app/globals.css";
 import Navbar from "../components/navbar/navbar";
+import Script from "next/script";
 
 export const metadata = {
   title: 'Next App',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main>{children}</main>
+        <Script src="https://kit.fontawesome.com/e5d641a935.js" crossorigin="anonymous"/>
       </body>
     </html>
   )

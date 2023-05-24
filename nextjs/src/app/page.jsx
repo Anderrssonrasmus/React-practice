@@ -1,6 +1,7 @@
 import Image from "next/image";
 import banner from "../media/banner.jpg";
 import Link from "next/link";
+import Button from "@/components/button/button";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
 
         <div className="buttons">
           <Link href="#">Vad har vi att erbjuda?</Link>
-          <Link href="#">Kontakta oss</Link>
+          <Button text="Test" link="#test"/>
         </div>
       </div>
 
